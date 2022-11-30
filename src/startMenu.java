@@ -1,12 +1,26 @@
 import java.util.Scanner;
 
+/**
+ * Start menu for the game
+ *
+ * @author Hannah Kiernan
+ */
+
 public class startMenu {
 
 
+    /**
+     * Main method
+     * @param args Arguments of the main method
+     */
     public static void main(String[] args) {
         menu();
     }
 
+    /**
+     * Prints a menu, and takes in the user's choice
+     * @return the number chosen by the user, each number corresponding to a different choice
+     */
     public static int printMenu() {
         Scanner s = new Scanner(System.in);
         boolean isInt;
@@ -31,6 +45,10 @@ public class startMenu {
 
         return value;
     }
+
+    /**
+     * Handles the choice made by the user
+     */
 
     public static void menu(){
 
@@ -57,13 +75,25 @@ public class startMenu {
 
     }
 
+    /**
+     * Starts the game
+     */
+
     public static void startGame(){
 
     }
 
+    /**
+     * Loads a pre-existing game from a local file
+     */
+
     public static void loadGame(){
 
     }
+
+    /**
+     * Prints the rules of the game
+     */
     public static void ruleBook(){
 
         System.out.println("How Does The Game Start?\n");
@@ -116,6 +146,10 @@ public class startMenu {
 
     }
 
+
+    /**
+     * Exits the program
+     */
     public static void exit(){
         System.out.println("Thank you for playing!");
     }
